@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    color: #fff;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: 200% 200%;
+}
+   /* background: linear-gradient(-45deg, #ee7752, #e73c73, #23a605, #2305ab);
+    
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}     */
+
+.wrapper{
+    width: 380px;
+    background: none;
+    padding: 40px 30px 50px 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+}
+.wrapper form{
+    margin: 40px 0;
+}
+form input{
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #fff;
+    border-bottom-width: 2px;
+    padding: 0 45px;
+    outline: none;
+}
+form input::placeholder{
+    color: #bfbfbf;
+    font-size: 17px;
+}
+form .field{
+    /*something happened here*/
+    font-size: 18px;
+}
+form .field .input-area{
+    position: relative;
+}
+form .error-txt{
+    margin-top: 5px;
+    color: red;
+    text-align: left;
+}
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+    animation: shake s ease-in-out infinite ;
+}
+form .login{
+    border-bottom: none;
+    border-radius: 24px;
+    color: #fff;
+    font-weight: 400;
+    background: #3459db;
+    margin: 20px;
+    cursor: pointer;
+}
+@keyframes shake {
+    0%{
+        margin-left: 50px;
+    }
+    50%{
+        margin-right: 50px;
+    }
+    100%{
+        margin: 40px;
+    }
+}
+/* HERE BOY!!!!*/
+form .error{
+    display: none;
+}
+form .pass-link{
+    text-align: left;
+    margin-top: -10px;
+}
+.wrapper a{
+    color: #5372f0;
+    text-decoration: none;
+}
+.wrapper a:hover{
+    text-decoration: underline;
+
+}
+form input[type="submit"]:hover{
+    background: #dc3545;
+    outline: none;
+    border: 0 solid #bfbfbf;
+        transition: 1s;
+}
+/*SLIDE*/
+#slide{
+    overflow: hidden;
+}
+#slide figure{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 400%;
+    margin: 0 50px 0;
+    left: 0;
+    animation: 20s slide infinite;
+}
+#slide figure img{
+    width: 20%;
+    height: 30%;
+    float: left;
+    margin-right: 5px;
+}
+/*
+@keyframes slide {
+    0%{
+        left: 0%;
+    }
+    20%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+
+}*/
+
+@keyframes slide {
+    0%{
+        left: 0%;
+    }
+    20%{
+        left: -50%;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -150%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -250%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -350%;
+    }
+    100%{
+        left: -400%;
+    }
+
+}
+.txt{
+    color: green;
+    font-size: 112px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

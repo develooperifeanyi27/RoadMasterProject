@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/login.css">
+    <title>login</title>
+</head>
+<body>
+    <!--SLIDE BITCHES!!!-->
+    <div id="slide">
+        <figure>
+            <img src="img/image.jpg" width="500px" height="2000px">
+            <img src="img/image2.jpg" width="500px" height="2000px">
+            <img src="img/image3.jpeg" width="500px" height="2000px">
+            <img src="img/image4.jpeg" width="500px" height="2000px">
+            <img src="img/image5.jpeg" width="500px" height="2000px">
+            <!--<img src="img/pexels-the-lazy-artist-gallery-1342609.jpg" width="5380px" height="4000px">-->
+        </figure>
+    </div>
+    <!--/SLIDE BITCHES!!!-->
+    <div class="wrapper">
+        <div class="profile"><img src="icons/icons/profile.png"></div>
+        <header>USER INFO</header>
+        <form action="#">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Email Address">
+                    <icon></icon>
+                    <icon></icon>
+                </div>
+            </div>
+            <div id="error" class="error error-txt">Email can't be Empty</div>
+
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password">
+                    <icon></icon>
+                    <icon></icon>
+                </div>
+            </div>
+            <div class="error error-txt">Password can't be Empty</div>
+
+            <div class="pass-link"><a href="#">Forgot Password</a></div>
+            <input class="login" onclick="change()" type="submit" value="Login">
+        </form>
+
+        <div class="signup-link">Not yet a member?<a href="home.html">SignUp?</a></div>
+    </div>
+    <script type="text/javascript">
+        function popup(){
+            alert("Allow Road Master To access Ur Location?")
+        }
+        popup();
+
+        /*LET'S WORK ON THE ERROR CODES :-| */
+        var Wrong = document.getElementById("error");
+        function change(){
+            Wrong.style.display = "flex";
+        }
+    </script>
+</body>
+</html>
