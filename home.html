@@ -11,11 +11,25 @@
     <nav>
         <div class="header">
             <div class="logo"><h3>ROAD MASTER</h3></div>
+            <!--FOR MENU BAR-->
+            <div id="sidebar">
+                <div class="toggle-btn" id="button" onclick="change()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="toprated.html">TOP RATED</a></li>
+                    <li><a href="about.html">About RM</a></li>
+                    <li><a href="abi"></a></li>
+                </ul>
+            </div>
             <div class="links">
                 <li><a href="FAQ.html">FAQ</a></li>
                 <div class="item-underliner"></div>
                 <li><a href="#">Top Rated</a></li>
-                <li><a href="about.html">About Road Master</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="about.html">Help?</a></li>
             </div>
             
@@ -159,7 +173,7 @@ myFunction()
 */
 function myFunction(){
     let text;
-    /*let person = prompt("Your Current State?:", "");*/
+    let person = prompt("Your Current State?:", "");
     if (person == "Abuja"){
         text = person + " is the federal capital territory";
     }if (person == "Lagos"){
@@ -242,6 +256,15 @@ function myFunction(){
     document.getElementById("demo").innerHTML = text
 }
 myFunction()
+
+/*TO REMOVE */
+var something = document.getElementById("sidebar");
+var  another = document.getElementById("button");
+function change(){
+    something.style.left = "1%";
+    another.style.display = "none";
+}
+
 </script>
 </body>
 </html>
